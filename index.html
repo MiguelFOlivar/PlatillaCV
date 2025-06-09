@@ -128,7 +128,10 @@
       </section>
 
       <section id="skills">
-        <h2>Habilidades Técnicas</h2>
+        <h2>Lenguajes y Herramientas</h2>
+        <p class="skills-desc">
+          Herramientas y tecnologías que manejo actualmente:
+        </p>
         <div class="skills-icons">
           <div class="skill">
             <img
@@ -200,6 +203,54 @@
           </div>
         </div>
       </section>
+
+      <section id="aptitudes">
+        <h2>Aptitudes</h2>
+
+        <div class="aptitudes-group">
+          <h3>Aptitudes Técnicas</h3>
+          <ul class="aptitudes-list">
+            <li>
+              Conocimientos sólidos en Java y programación orientada a objetos
+              (POO)
+            </li>
+            <li>
+              Manejo básico de Spring y Spring Boot para el desarrollo de
+              aplicaciones backend
+            </li>
+            <li>Familiaridad con tecnologías web: HTML, CSS y JavaScript</li>
+            <li>
+              Conocimientos introductorios en frameworks frontend como Angular y
+              React
+            </li>
+            <li>
+              Manejo de Git y GitHub para control de versiones y colaboración en
+              equipo
+            </li>
+            <li>
+              Uso de bases de datos relacionales y lenguaje SQL para consultas y
+              modelado de datos
+            </li>
+          </ul>
+        </div>
+
+        <div class="aptitudes-group">
+          <h3>Aptitudes Blandas y Profesionales</h3>
+          <ul class="aptitudes-list">
+            <li>
+              Excelente capacidad para el trabajo en equipo y la comunicación
+              efectiva
+            </li>
+            <li>
+              Mentalidad de crecimiento y compromiso con el aprendizaje continuo
+            </li>
+            <li>Adaptabilidad a nuevos entornos, proyectos y tecnologías</li>
+            <li>Pensamiento creativo para la resolución de problemas</li>
+            <li>Actitud proactiva y enfoque autodidacta</li>
+          </ul>
+        </div>
+      </section>
+
       <section id="contact">
         <h2>Contacto</h2>
         <ul class="contact-list">
@@ -241,5 +292,27 @@
     <footer>
       <p>&copy; 2025 Miguel Figueroa Olivar. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+      // Mostrar botón al hacer scroll
+      window.onscroll = function () {
+        const btn = document.getElementById("scrollTopBtn");
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+
+      // Scroll suave al hacer clic
+      document
+        .getElementById("scrollTopBtn")
+        .addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
   </body>
 </html>

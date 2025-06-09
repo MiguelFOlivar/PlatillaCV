@@ -373,3 +373,54 @@ footer {
 .contact-list a:hover {
   color: var(--accent-color);
 }
+
+#aptitudes {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+#aptitudes h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 0.75rem;
+}
+
+.aptitudes-group {
+  margin-bottom: 2rem;
+}
+
+.aptitudes-group h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--main-color);
+}
+
+.aptitudes-list {
+  list-style: none;
+  padding-left: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.5rem;
+}
+
+.aptitudes-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+.aptitudes-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.skills-desc {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 1rem;
+}
